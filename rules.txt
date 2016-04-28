@@ -1,0 +1,139 @@
+item: ('"docs/dist/css/bootstrap.css"',) , 0.037
+item: ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"') , 0.037
+item: ('"docs/dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"') , 0.037
+item: ('"docs/dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"') , 0.037
+item: ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.css"') , 0.037
+item: ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"') , 0.037
+item: ('"docs/dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') , 0.037
+item: ('"docs/dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"') , 0.037
+item: ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"') , 0.037
+item: ('"docs/dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') , 0.037
+item: ('"dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') , 0.037
+item: ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"') , 0.037
+item: ('"docs/dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') , 0.037
+item: ('"dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') , 0.037
+item: ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') , 0.037
+item: ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"') , 0.037
+item: ('"docs/dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"', '"dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') , 0.037
+item: ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"', '"dist/css/bootstrap.min.css"') , 0.037
+item: ('"docs/examples/carousel/index.html"',) , 0.039
+item: ('"dist/css/bootstrap.css"',) , 0.039
+item: ('"dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') , 0.039
+item: ('"dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"') , 0.039
+item: ('"CONTRIBUTING.md"',) , 0.041
+item: ('"docs/dist/css/bootstrap.css.map"',) , 0.044
+item: ('"docs/assets/js/raw-files.min.js"', '"docs/assets/js/customize.min.js"') , 0.044
+item: ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.css.map"') , 0.044
+item: ('"dist/css/bootstrap.css.map"',) , 0.046
+item: ('"Gruntfile.js"',) , 0.046
+item: ('"test-infra/npm-shrinkwrap.json"',) , 0.046
+item: ('"docs/dist/css/bootstrap.min.css"',) , 0.052
+item: ('"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') , 0.052
+item: ('"dist/css/bootstrap.min.css"',) , 0.054
+item: ('"docs/assets/js/customize.min.js"',) , 0.056
+item: ('"README.md"',) , 0.058
+item: ('"docs/assets/js/raw-files.min.js"',) , 0.060
+item: ('"package.json"',) , 0.062
+item: ('"docs/_data/browser-bugs.yml"',) , 0.160
+
+------------------------ RULES:
+Rule: ('"dist/css/bootstrap.min.css"',) ==> ('"docs/dist/css/bootstrap.css.map"',) , 0.692
+Rule: ('"dist/css/bootstrap.min.css"',) ==> ('"docs/dist/css/bootstrap.css"',) , 0.692
+Rule: ('"dist/css/bootstrap.min.css"',) ==> ('"docs/dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"') , 0.692
+Rule: ('"dist/css/bootstrap.min.css"',) ==> ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"') , 0.692
+Rule: ('"dist/css/bootstrap.min.css"',) ==> ('"docs/dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"') , 0.692
+Rule: ('"dist/css/bootstrap.min.css"',) ==> ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"') , 0.692
+Rule: ('"dist/css/bootstrap.min.css"',) ==> ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.css"') , 0.692
+Rule: ('"dist/css/bootstrap.min.css"',) ==> ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.css.map"') , 0.692
+Rule: ('"dist/css/bootstrap.min.css"',) ==> ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"') , 0.692
+Rule: ('"dist/css/bootstrap.min.css"',) ==> ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"') , 0.692
+Rule: ('"docs/dist/css/bootstrap.min.css"',) ==> ('"dist/css/bootstrap.css"',) , 0.720
+Rule: ('"docs/dist/css/bootstrap.min.css"',) ==> ('"docs/dist/css/bootstrap.css"',) , 0.720
+Rule: ('"docs/dist/css/bootstrap.min.css"',) ==> ('"dist/css/bootstrap.css.map"',) , 0.720
+Rule: ('"docs/dist/css/bootstrap.min.css"',) ==> ('"docs/dist/css/bootstrap.css.map"',) , 0.720
+Rule: ('"docs/dist/css/bootstrap.min.css"',) ==> ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.css"') , 0.720
+Rule: ('"docs/dist/css/bootstrap.min.css"',) ==> ('"docs/dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"') , 0.720
+Rule: ('"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.css.map"',) , 0.720
+Rule: ('"docs/dist/css/bootstrap.min.css"',) ==> ('"dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') , 0.720
+Rule: ('"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.css"',) , 0.720
+Rule: ('"docs/dist/css/bootstrap.min.css"',) ==> ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.css.map"') , 0.720
+Rule: ('"docs/dist/css/bootstrap.min.css"',) ==> ('"docs/dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') , 0.720
+Rule: ('"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.css"',) , 0.720
+Rule: ('"docs/dist/css/bootstrap.min.css"',) ==> ('"dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"') , 0.720
+Rule: ('"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.css.map"',) , 0.720
+Rule: ('"docs/dist/css/bootstrap.min.css"',) ==> ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') , 0.720
+Rule: ('"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.css"') , 0.720
+Rule: ('"docs/dist/css/bootstrap.min.css"',) ==> ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"') , 0.720
+Rule: ('"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.css.map"') , 0.720
+Rule: ('"docs/assets/js/raw-files.min.js"',) ==> ('"docs/assets/js/customize.min.js"',) , 0.724
+Rule: ('"dist/css/bootstrap.min.css"',) ==> ('"dist/css/bootstrap.css"',) , 0.731
+Rule: ('"dist/css/bootstrap.min.css"',) ==> ('"dist/css/bootstrap.css.map"',) , 0.731
+Rule: ('"docs/assets/js/customize.min.js"',) ==> ('"docs/assets/js/raw-files.min.js"',) , 0.778
+Rule: ('"dist/css/bootstrap.css.map"',) ==> ('"docs/dist/css/bootstrap.min.css"',) , 0.818
+Rule: ('"dist/css/bootstrap.css.map"',) ==> ('"docs/dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"') , 0.818
+Rule: ('"dist/css/bootstrap.css.map"',) ==> ('"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') , 0.818
+Rule: ('"dist/css/bootstrap.css.map"',) ==> ('"docs/dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"') , 0.818
+Rule: ('"dist/css/bootstrap.css.map"',) ==> ('"docs/dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') , 0.818
+Rule: ('"docs/dist/css/bootstrap.css.map"',) ==> ('"dist/css/bootstrap.min.css"',) , 0.857
+Rule: ('"docs/dist/css/bootstrap.css.map"',) ==> ('"docs/dist/css/bootstrap.min.css"',) , 0.857
+Rule: ('"docs/dist/css/bootstrap.css.map"',) ==> ('"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') , 0.857
+Rule: ('"docs/dist/css/bootstrap.css.map"',) ==> ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"') , 0.857
+Rule: ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.css.map"') ==> ('"docs/dist/css/bootstrap.min.css"',) , 0.857
+Rule: ('"docs/dist/css/bootstrap.css.map"',) ==> ('"dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"') , 0.857
+Rule: ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.css.map"') ==> ('"dist/css/bootstrap.min.css"',) , 0.857
+Rule: ('"docs/dist/css/bootstrap.css.map"',) ==> ('"dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') , 0.857
+Rule: ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.css.map"') ==> ('"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') , 0.857
+Rule: ('"dist/css/bootstrap.css.map"',) ==> ('"dist/css/bootstrap.min.css"',) , 0.864
+Rule: ('"dist/css/bootstrap.css"',) ==> ('"docs/dist/css/bootstrap.min.css"',) , 0.947
+Rule: ('"dist/css/bootstrap.css"',) ==> ('"docs/dist/css/bootstrap.css"',) , 0.947
+Rule: ('"dist/css/bootstrap.css"',) ==> ('"docs/dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"') , 0.947
+Rule: ('"dist/css/bootstrap.css"',) ==> ('"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') , 0.947
+Rule: ('"dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.min.css"',) , 0.947
+Rule: ('"dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.min.css"',) , 0.947
+Rule: ('"dist/css/bootstrap.css"',) ==> ('"docs/dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') , 0.947
+Rule: ('"dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.css"',) , 0.947
+Rule: ('"dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.css.map"',) , 0.947
+Rule: ('"dist/css/bootstrap.css"',) ==> ('"docs/dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') , 0.947
+Rule: ('"dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"') , 0.947
+Rule: ('"dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"') , 0.947
+Rule: ('"dist/css/bootstrap.css.map"',) ==> ('"docs/dist/css/bootstrap.css.map"',) , 0.955
+Rule: ('"dist/css/bootstrap.min.css"',) ==> ('"docs/dist/css/bootstrap.min.css"',) , 0.962
+Rule: ('"dist/css/bootstrap.css"',) ==> ('"dist/css/bootstrap.min.css"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.min.css"',) ==> ('"dist/css/bootstrap.min.css"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.css"',) ==> ('"docs/dist/css/bootstrap.min.css"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.css"',) ==> ('"dist/css/bootstrap.css"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.css"',) ==> ('"dist/css/bootstrap.min.css"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.css.map"',) ==> ('"dist/css/bootstrap.css.map"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.css"',) ==> ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"') , 1.000
+Rule: ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.css"') ==> ('"docs/dist/css/bootstrap.min.css"',) , 1.000
+Rule: ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.css"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.css"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.min.css"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.min.css"',) , 1.000
+Rule: ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.min.css"',) , 1.000
+Rule: ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.css.map"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.css.map"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.css"',) ==> ('"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') , 1.000
+Rule: ('"docs/dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.min.css"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.min.css"',) , 1.000
+Rule: ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.min.css"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.css"',) ==> ('"dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') , 1.000
+Rule: ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.css"') ==> ('"dist/css/bootstrap.min.css"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.css"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.css.map"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.css"',) ==> ('"dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') , 1.000
+Rule: ('"docs/dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') , 1.000
+Rule: ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.css"') ==> ('"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') , 1.000
+Rule: ('"docs/dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"') , 1.000
+Rule: ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') , 1.000
+Rule: ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.min.css"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.css"',) , 1.000
+Rule: ('"dist/css/bootstrap.css"', '"docs/dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.min.css"',) , 1.000
+Rule: ('"dist/css/bootstrap.css"', '"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.css"',) , 1.000
+Rule: ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"') , 1.000
+Rule: ('"docs/dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"') , 1.000
+Rule: ('"docs/dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"') , 1.000
+Rule: ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.min.css"',) , 1.000
+Rule: ('"dist/css/bootstrap.css.map"', '"docs/dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.min.css"',) , 1.000
+Rule: ('"dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') ==> ('"docs/dist/css/bootstrap.css.map"',) , 1.000
+Rule: ('"docs/dist/css/bootstrap.css.map"', '"dist/css/bootstrap.min.css"', '"docs/dist/css/bootstrap.min.css"') ==> ('"dist/css/bootstrap.css.map"',) , 1.000
