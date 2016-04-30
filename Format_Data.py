@@ -1,13 +1,17 @@
 import json
 import csv
+import sys
 from pprint import pprint
 
 i = 0
 j = 0
 adj = []
 flag = 1
+file = []
 
-with open('test4.json') as f:
+file = sys.argv
+
+with open(file[1]) as f:
 	     data = json.load(f)
 	     # commit[i] = data;
 	     # i = i + 1

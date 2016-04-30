@@ -115,12 +115,12 @@ def runApriori(data_iter, minSupport, minConfidence):
 
 def printResults(items, rules):
     """prints the generated itemsets sorted by support and the confidence rules sorted by confidence"""
-    for item, support in sorted(items, key=lambda (item, support): support):
-        print "item: %s , %.3f" % (str(item), support)
-    print "\n------------------------ RULES:"
+    # for item, support in sorted(items, key=lambda (item, support): support):
+    #     print "item: %s , %.3f" % (str(item), support)
+    # print "\n------------------------ RULES:"
     for rule, confidence in sorted(rules, key=lambda (rule, confidence): confidence):
         pre, post = rule
-        print "Rule: %s ==> %s , %.3f" % (str(pre), str(post), confidence)
+        print "%s ==> %s" % (str(pre), str(post))
 
 
 def dataFromFile(fname):
@@ -142,7 +142,7 @@ if __name__ == "__main__":
     optparser.add_option('-s', '--minSupport',
                          dest='minS',
                          help='minimum support value',
-                         default=0.15,
+                         default=0.052,
                          type='float')
     optparser.add_option('-c', '--minConfidence',
                          dest='minC',
