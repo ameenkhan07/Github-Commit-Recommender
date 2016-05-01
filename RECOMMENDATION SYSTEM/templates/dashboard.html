@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://bootstrap-themes.github.io/dashboard/order-history/index.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        Recommendation System
+    </title>
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="../static/css/toolkit-inverse.css" rel="stylesheet">
+    <link href="../static/css/application.css" rel="stylesheet">
+    <style>
+    body {
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+    }
+    </style>
+    <style type="text/css"></style>
+</head>
+
+<body>
+    <div class="bw">
+        <div class="fu">
+            <div class="hc aps" style="width:100%">
+                <div class="apa">
+                    <div class="apb">
+                        <h6 class="apd">Dashboards</h6>
+                        <h2 class="apc">Recommendation history</h2>
+                    </div>
+                </div>
+                <div class="ud">
+                    <div class="eg">
+                        <table class="cl" data-sort="table">
+                            <thead>
+                                <tr>
+                                    <!-- <th class="header">
+                                        <input type="checkbox" class="aqk" id="selectAll">
+                                    </th> -->
+                                    <th class="header">#</th>
+                                    <th class="header">Commit Hash</th>
+                                    <th class="header">Recommendation</th>
+                                    <th class="header">User-Committer</th>
+                                    <th class="header">Commit Message</th>
+                                    <th class="header">Timestamp</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for i in entries%}
+                                <tr>
+                                    <td>{{entries.index(i) + 1 }}</td>
+                                    <td>{{i['commit_sha']}}</td>
+                                    <td>{{i['recommend']}}</td>
+                                    <td>{{i['username']}}</td>
+                                    <td>{{i['commit_message']}}</td>
+                                    <td>{{i['timestamp']}}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- PAGINATION -->
+                <!-- <div class="db">
+                    <ul class="ow">
+                        <li>
+                            <a href="http://bootstrap-themes.github.io/dashboard/order-history/index.html#" aria-label="Previous">
+                                <span aria-hidden="true">«</span>
+                            </a>
+                        </li>
+                        <li class="active"><a href="http://bootstrap-themes.github.io/dashboard/order-history/index.html#">1</a></li>
+                        <li><a href="http://bootstrap-themes.github.io/dashboard/order-history/index.html#">2</a></li>
+                        <li>
+                            <a href="http://bootstrap-themes.github.io/dashboard/order-history/index.html#" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </div>
+  <!--   <script src="./jquery.min(1).js"></script>
+    <script src="./chart.js"></script>
+    <script src="./tablesorter.min.js"></script>
+    <script src="./toolkit.js"></script>
+    <script src="./application.js"></script> -->
+    <script>
+    // execute/clear BS loaders for docs
+    $(function() {
+        while (window.BS && window.BS.loader && window.BS.loader.length) {
+            (window.BS.loader.pop())()
+        }
+    })
+    </script>
+</body>
+
+</html>
