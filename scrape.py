@@ -22,7 +22,8 @@ def create_json(req, data):
             counter += 1
             print counter
 
-            response = requests.get(commit['url']+'?access_token='+ACCESS_TOKEN).json()
+            response = requests.get(
+                commit['url']+'?access_token='+ACCESS_TOKEN).json()
 
             if not bool(response):
                 Printer(data)
@@ -33,10 +34,11 @@ def create_json(req, data):
             Printer(data, outfile)
     return
 
+
 def Printer(data, outfile):
         # outfile.write(str(data) + "\n")
-        json.dump(data,outfile,indent=2)
-        sys.exit(0)
+    json.dump(data, outfile, indent=2)
+    sys.exit(0)
 
 
 def get_repositories():
@@ -68,7 +70,7 @@ file = 1
 API = API_LIST[1]
 OUT = dir+str(file)+".json"
 outfile = open(OUT, "w")
-count = 1 #Pagination
+count = 1  # Pagination
 data = []
 flag = 0
 API = API + "?access_token="+ACCESS_TOKEN+"&page="
@@ -90,7 +92,7 @@ while True:  # PAGINATION
         # pickle.dump(data, outfile)
         count += 1
     else:
-            Printer(data, outfile)
+        Printer(data, outfile)
 
         # time.sleep(4000)
         # print counter
