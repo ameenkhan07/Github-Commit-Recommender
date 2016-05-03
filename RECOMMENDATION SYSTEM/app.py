@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, g, flash
+from flask import Flask, request, render_template, g
 import requests
 import sqlite3
 import json
@@ -10,7 +10,7 @@ DATABASE = '/tmp/recommend.db'
 USERNAME = 'admin'
 PASSWORD = 'default'
 
-#-------------------- DATABSE SETUP --------------------#
+#-------------------- DATABASE SETUP --------------------#
 
 
 def connect_db():
@@ -39,9 +39,7 @@ def createJson(url_listy):
     outfile = open("COMMIT_SAMPLE.json", "w")
     for i in url_listy:
         response = requests.get(i).json()
-        # print response
         d.append(response["files"])
-    # print d
     json.dump(d, outfile, indent=2)
 
 
@@ -52,31 +50,22 @@ def reco():
     reco_listy = []
     with open("COMMIT_SAMPLE.json") as f:
         data = json.load(f)
-
     f.close()
 
     while(i < len(data[0])):
 
         file = data[0][i]['filename']
-        # print(file)
         searchfile = open("rules.txt", "r")
 
         for line in searchfile:
 
             rule_split = line.split('==>', 1)
-            # print(rule_split[0])
-            # print(file)
-
             if (rule_split[0].find(file)) != -1:
-                # print(rule_split[0])
-                reco += line
+                reco = reco+line
 
-        print reco
-        print "REZs"
         reco_listy.append(reco)
         searchfile.close()
         i = i + 1
-        # print(i)
     return reco_listy
 
 
@@ -84,7 +73,6 @@ def commitUrl(sha, url):
     '''
     CREATES A LEGIT API URL FROM THE GIVEN VARIED SOURCED URL
     '''
-    # print sha, url
     url = url.rsplit('/', 2)[0]
     url = url + '/commits/' + str(sha) + '?access_token='+ACCESS_TOKEN
     return url
@@ -104,10 +92,13 @@ def before_request():
 def index():
     # return 'Index Page'
     db = get_db()
-    cur = db.execute('select recommend,timestamp,commit_sha,commit_message, username from recommendation')
-    entries = [dict(recommend=row[0], timestamp=row[1], commit_sha=row[2], commit_message=row[3],username=row[4]) for row in cur.fetchall()]
-    print entries
-    return render_template('dashboard.html', entries=entries,count=1)
+    cur = db.execute('select recommend,timestamp,commit_sha,commit_message, username, repo_url from recommendation order by timestamp desc')
+    entries = [dict(recommend=row[0], timestamp=row[1], commit_sha=row[2], commit_message=row[3],username=row[4],repo_url=row[5]) for row in cur.fetchall()]
+    repo_url=entries[0]["repo_url"]
+
+    response = requests.get(repo_url+'?access_token='+ACCESS_TOKEN).json()
+    # print repo_url
+    return render_template('dashboard.html', entries=entries, stars=response['source']['stargazers_count'],forks=response['source']['forks_count'], open_issues=response['source']['open_issues_count'],watchers=response['source']['watchers_count'],repo_name=response['name'])
 
 
 @app.route("/",  methods=['POST'])
@@ -115,23 +106,26 @@ def payload():
     data = json.loads(request.data)
     url_listy = []
     timestamp_listy = []
-    sha_listy = []
+    commit_url_listy = []
     message_listy = []
     for i in data['commits']:
         api_Url = commitUrl(i['id'], data['repository']['commits_url'])
-        sha_listy.append(i['id'])
+        commit_url_listy.append(i['url'])
         timestamp_listy.append(i['timestamp'])
         message_listy.append(i['message'])
         url_listy.append(api_Url)
 
+    # print commit_url_listy
+    repo_url =  api_Url.rsplit('/', 2)[0]
+    print repo_url
+    createJson(url_listy)
     reco_listy = reco()
     db = get_db()
 
-    for (s,t,m,r) in zip(sha_listy,timestamp_listy,message_listy,reco_listy):
-        db.execute('insert into recommendation (recommend,timestamp,commit_sha,commit_message, username) values (?,?,?,?,?)', [r, t, s, m, data['pusher']['name']])
+    for (c,t,m,r) in zip(commit_url_listy,timestamp_listy,message_listy,reco_listy):
+        db.execute('insert into recommendation (recommend,timestamp,commit_sha,commit_message, username, repo_url) values (?,?,?,?,?,?)',[r,t,c,m,data['pusher']['name'],repo_url])
         db.commit()
 
-    createJson(url_listy)
 
     return "OK"
 

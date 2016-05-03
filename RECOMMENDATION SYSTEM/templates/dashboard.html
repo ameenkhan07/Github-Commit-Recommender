@@ -26,7 +26,57 @@
             <div class="hc aps" style="width:100%">
                 <div class="apa">
                     <div class="apb">
-                        <h6 class="apd">Dashboards</h6>
+                        <h2 class="apc">Repository : {{repo_name}}</h2>
+                    </div>
+                </div>
+                <div class="anv alg ala">
+                    <h3 class="anw anx">Quick stats</h3>
+                </div>
+                <div class="fu apt">
+                    <div class="gq gg ala">
+                        <div class="apu ano">
+                            <div class="alz">
+                                <span class="anj">Stars</span>
+                                <h2 class="ani">
+                            {{stars}}
+                        </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gq gg ala">
+                        <div class="apu anr">
+                            <div class="alz">
+                                <span class="anj">Forks</span>
+                                <h2 class="ani">
+                            {{forks}}
+                        </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gq gg ala">
+                        <div class="apu anp">
+                            <div class="alz">
+                                <span class="anj">Open Issues</span>
+                                <h2 class="ani">
+                            {{open_issues}}
+                        </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gq gg ala">
+                        <div class="apu anq">
+                            <div class="alz">
+                                <span class="anj">Watchers</span>
+                                <h2 class="ani">
+                            {{watchers}}
+                        </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="aky">
+                <div class="apa">
+                    <div class="apb">
                         <h2 class="apc">Recommendation history</h2>
                     </div>
                 </div>
@@ -35,22 +85,20 @@
                         <table class="cl" data-sort="table">
                             <thead>
                                 <tr>
-                                    <!-- <th class="header">
-                                        <input type="checkbox" class="aqk" id="selectAll">
-                                    </th> -->
                                     <th class="header">#</th>
-                                    <th class="header">Commit Hash</th>
-                                    <th class="header">Recommendation</th>
-                                    <th class="header">User-Committer</th>
-                                    <th class="header">Commit Message</th>
-                                    <th class="header">Timestamp</th>
+                                    <th class="header">COMMIT URL</th>
+                                    <th class="header">RECOMMENDATION</th>
+                                    <th class="header">COMMITTER</th>
+                                    <th class="header">COMMIT MESSAGE</th>
+                                    <th class="header">TIMESTAMP</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody style="white-space: pre-wrap;">
                                 {% for i in entries%}
+                                <!-- {{i}} -->
                                 <tr>
                                     <td>{{entries.index(i) + 1 }}</td>
-                                    <td>{{i['commit_sha']}}</td>
+                                    <td><a href="{{i['commit_sha']}}">View Changes in Github</a></td>
                                     <td>{{i['recommend']}}</td>
                                     <td>{{i['username']}}</td>
                                     <td>{{i['commit_message']}}</td>
@@ -61,31 +109,9 @@
                         </table>
                     </div>
                 </div>
-                <!-- PAGINATION -->
-                <!-- <div class="db">
-                    <ul class="ow">
-                        <li>
-                            <a href="http://bootstrap-themes.github.io/dashboard/order-history/index.html#" aria-label="Previous">
-                                <span aria-hidden="true">«</span>
-                            </a>
-                        </li>
-                        <li class="active"><a href="http://bootstrap-themes.github.io/dashboard/order-history/index.html#">1</a></li>
-                        <li><a href="http://bootstrap-themes.github.io/dashboard/order-history/index.html#">2</a></li>
-                        <li>
-                            <a href="http://bootstrap-themes.github.io/dashboard/order-history/index.html#" aria-label="Next">
-                                <span aria-hidden="true">»</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div> -->
             </div>
         </div>
     </div>
-  <!--   <script src="./jquery.min(1).js"></script>
-    <script src="./chart.js"></script>
-    <script src="./tablesorter.min.js"></script>
-    <script src="./toolkit.js"></script>
-    <script src="./application.js"></script> -->
     <script>
     // execute/clear BS loaders for docs
     $(function() {

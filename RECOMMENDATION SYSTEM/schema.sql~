@@ -5,6 +5,6 @@ CREATE TABLE `recommendation` (
   `username` 	TEXT not null,
   `timestamp` TEXT not null,
   `commit_message`  TEXT,
-  `repo_url`  TEXT,
+  `api_url`  TEXT,
   PRIMARY KEY(commit_sha)
 );
